@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.abfintech.abw.dal.batch.entity.FundTransferBatchProposalConfig;
-import com.abfintech.abw.dal.batch.repository.FundTransferBatchProposalConfigRepository;
+import com.abfintech.opn.dal.batch.entity.FundTransferBatchProposalConfig;
+import com.abfintech.opn.dal.batch.repository.FundTransferBatchProposalConfigRepository;
 import com.abfintech.opn.batch.createbatchproposal.producer.KafkaFundTransferBatchProposalPublishService;
 
 @Service
@@ -32,7 +32,7 @@ public class FundTransferBatchProposalConfigPublishService {
 		if (null != fundTransferBatchProposalConfigList && !fundTransferBatchProposalConfigList.isEmpty()) {
 			for (FundTransferBatchProposalConfig fundTransferBatchProposalConfig : fundTransferBatchProposalConfigList) {
 
-				com.abfintech.abw.model.batch.FundTransferBatchProposalConfig fundTransferBatchProposalConfigNew = new com.abfintech.abw.model.batch.FundTransferBatchProposalConfig();
+				com.abfintech.opn.model.batch.FundTransferBatchProposalConfig fundTransferBatchProposalConfigNew = new com.abfintech.opn.model.batch.FundTransferBatchProposalConfig();
 				fundTransferBatchProposalConfigNew.setMemberBankBic(fundTransferBatchProposalConfig.getMemberBankBic());
 				fundTransferBatchProposalConfigNew.setCurrency(fundTransferBatchProposalConfig.getCurrency());
 

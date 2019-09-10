@@ -15,12 +15,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.abfintech.abw.dal.tdb.entity.Ledger;
-import com.abfintech.abw.dal.tdb.repository.LedgerRepository;
-import com.abfintech.abw.model.batch.FundTransferBatchProposal;
-import com.abfintech.abw.model.batch.FundTransferBatchResponse;
-import com.abfintech.abw.model.batch.FundTransferBatchStatus;
-import com.abfintech.abw.model.dlt.Notifications;
+import com.abfintech.opn.dal.tdb.entity.Ledger;
+import com.abfintech.opn.dal.tdb.repository.LedgerRepository;
+import com.abfintech.opn.model.batch.FundTransferBatchProposal;
+import com.abfintech.opn.model.batch.FundTransferBatchResponse;
+import com.abfintech.opn.model.batch.FundTransferBatchStatus;
+import com.abfintech.opn.model.dlt.Notifications;
 import com.google.gson.Gson;
 
 @Component

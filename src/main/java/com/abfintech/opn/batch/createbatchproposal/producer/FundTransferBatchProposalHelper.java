@@ -12,11 +12,11 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.abfintech.abw.dal.tdb.entity.ParticipantRelation;
-import com.abfintech.abw.dal.tdb.model.FundTransferInstructionDetails;
-import com.abfintech.abw.dal.tdb.repository.ParticipantRelationRepository;
-import com.abfintech.abw.model.batch.FundTransferBatchProposal;
-import com.abfintech.abw.model.batch.FundTransferBatchProposalDetails;
+import com.abfintech.opn.dal.tdb.entity.ParticipantRelation;
+import com.abfintech.opn.dal.tdb.model.FundTransferInstructionDetails;
+import com.abfintech.opn.dal.tdb.repository.ParticipantRelationRepository;
+import com.abfintech.opn.model.batch.FundTransferBatchProposal;
+import com.abfintech.opn.model.batch.FundTransferBatchProposalDetails;
 
 @Component
 public class FundTransferBatchProposalHelper {

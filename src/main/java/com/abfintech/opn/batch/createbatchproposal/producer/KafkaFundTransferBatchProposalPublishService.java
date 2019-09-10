@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.abfintech.abw.dal.tdb.model.FundTransferInstructionDetails;
-import com.abfintech.abw.dal.tdb.repository.LedgerRepository;
-import com.abfintech.abw.model.batch.FundTransferBatchProposal;
-import com.abfintech.abw.model.batch.FundTransferBatchProposalConfig;
+import com.abfintech.opn.dal.tdb.model.FundTransferInstructionDetails;
+import com.abfintech.opn.dal.tdb.repository.LedgerRepository;
+import com.abfintech.opn.model.batch.FundTransferBatchProposal;
+import com.abfintech.opn.model.batch.FundTransferBatchProposalConfig;
 import com.abfintech.opn.batch.submitbatchproposal.service.LedgerService;
 
 @Component
