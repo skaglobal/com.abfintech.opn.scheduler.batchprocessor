@@ -13,7 +13,6 @@ import com.abfintech.opn.dal.batch.repository.FundTransferBatchProposalConfigRep
 import com.abfintech.opn.batch.createbatchproposal.producer.KafkaFundTransferBatchProposalPublishService;
 
 @Service
-@Transactional(transactionManager = "batchTransactionManager")
 public class FundTransferBatchProposalConfigPublishService {
 
 	@Value("${spring.application.name}")
