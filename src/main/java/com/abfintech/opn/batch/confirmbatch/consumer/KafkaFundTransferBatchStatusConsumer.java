@@ -15,7 +15,7 @@ public class KafkaFundTransferBatchStatusConsumer implements KafkaMessageProcess
 	private LedgerService ledgerService;
 
 	@Override
-	public void processMessage(AbBaseModel baseModel) {
+	public void processMessage(AbBaseModel baseModel,String topicName) {
 		System.out.println("Treasurer. Confirm batch consumer.");
 		System.err.println("Treasurer. Confirm batch consumer.");
 		Notifications notifications = (Notifications) baseModel;
